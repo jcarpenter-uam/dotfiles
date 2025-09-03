@@ -1,6 +1,6 @@
 # Dotfiles
 
-![arch_btw](https://github.com/user-attachments/assets/d5137b2a-0cbd-4f40-beb8-9c685d9319c6)
+Work dotfiles
 
 ## TODO
 
