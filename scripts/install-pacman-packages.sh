@@ -23,6 +23,9 @@ packages_to_install=(
     'docker'
     'docker-compose'
     'dbeaver'
+    'terraform'
+    'talosctl'
+    'helm'
 )
 
 # --- Script Execution ---
