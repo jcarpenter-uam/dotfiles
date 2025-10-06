@@ -26,6 +26,9 @@ packages_to_install=(
     'terraform'
     'talosctl'
     'helm'
+    'ansible-core'
+    'wayvnc'
+    'virtualbox'
 )
 
 # --- Script Execution ---
