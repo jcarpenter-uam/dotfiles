@@ -29,6 +29,8 @@ packages_to_install=(
     'ansible-core'
     'wayvnc'
     'virtualbox'
+    'imagemagick'
+    'luarocks'
 )
 
 # --- Script Execution ---
