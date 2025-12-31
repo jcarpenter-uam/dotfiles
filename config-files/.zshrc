@@ -104,3 +104,11 @@ fi
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias k="kubectl"
 alias lzd="lazydocker"
+alias system-update="~/projects/dotfiles/system-update.sh"
+alias battery-check="sudo tlp-stat -b"
+
+# Paths
+
+# GO 
+export GOPATH="$HOME/.local/share/go"
+export PATH="$PATH:$GOPATH/bin"

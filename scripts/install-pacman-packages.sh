@@ -31,6 +31,21 @@ packages_to_install=(
     'virtualbox'
     'imagemagick'
     'luarocks'
+    'yazi'
+    'ffmpeg'
+    '7zip'
+    'jq'
+    'poppler'
+    'fd'
+    'ripgrep'
+    'fzf'
+    'zoxide'
+    'resvg'
+    'solaar'
+    'dnsutils'
+    'swaylock'
+    'usbutils'
+    'tlp'
 )
 
 # --- Script Execution ---
