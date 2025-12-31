@@ -1,2 +1,2 @@
 #!/bin/bash
-hyprctl hyprpaper wallpaper ",/home/jonah/projects/dotfiles/wallpapers/vnc-active.png"
+hyprctl hyprpaper wallpaper ",/home/jonah/projects/dotfiles/wallpapers/vnc-active.jpg"
