@@ -37,7 +37,6 @@
 }
 
 #tray,
-#backlight,
 #clock,
 #battery,
 #pulseaudio,
@@ -45,7 +44,6 @@
 #cpu,
 #memory,
 #custom-gpu,
-#custom-lock,
 #custom-power {
   background-color: #101010;
   padding: 0.5rem 1rem;
@@ -66,34 +64,26 @@
 
 #battery {
   color: #a6d189;
+  border-radius: 0;
 }
 
-#battery.charging {
+#battery.charging,
+#battery.plugged {
   color: #a6d189;
 }
 
 #battery.warning:not(.charging) {
-  color: #e78284;
-}
-
-#backlight {
   color: #e5c890;
 }
 
-#backlight,
-#battery {
-  border-radius: 0;
+#battery.critical:not(.charging) {
+  color: #e78284;
 }
 
 #pulseaudio {
   color: #ea999c;
   border-radius: 5px 0px 0px 5%;
   margin-left: 1rem;
-}
-
-#custom-lock {
-  border-radius: 5px 0px 0px 5px;
-  color: #babbf1;
 }
 
 #custom-power {
