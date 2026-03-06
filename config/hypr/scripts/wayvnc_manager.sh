@@ -52,7 +52,15 @@ while true; do
     # Remove any stale socket file that might prevent starting
     rm -f /run/user/1000/wayvncctl
 
-    wayvnc 0.0.0.0 5901 --output HDMI-A-1 --disable-input &
+    if hyprctl monitors | grep -q "Monitor HDMI-A-1"; then
+        TARGET_DISPLAY="HDMI-A-1"
+        log "Detected HDMI-A-1. Setting as target display."
+    else
+        TARGET_DISPLAY="eDP-1"
+        log "HDMI-A-1 not found. Falling back to target display: eDP-1."
+    fi
+
+    wayvnc 0.0.0.0 5901 --output "$TARGET_DISPLAY" --disable-input &
     WAYVNC_PID=$!
 
     sleep 1
