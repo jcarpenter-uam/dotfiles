@@ -52,6 +52,7 @@ aur_packages=(
     'flux-bin'
     'teams-for-linux'
     'outlook-for-linux'
+    'forticlient-vpn'
 )
 
 echo -e "${BLUE}Installing ${#pacman_packages[@]} selected packages...${NC}"
