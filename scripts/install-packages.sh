@@ -39,12 +39,19 @@ pacman_packages=(
     'ripgrep'
     'pacman-contrib'
     'websocat'
+    'wayvnc'
+    'virtualbox'
+    'tlp'
+    'brightnessctl'
+    'nvidia-container-toolkit'
 )
 
 aur_packages=(
     'google-chrome'
     'lazydocker'
     'flux-bin'
+    'teams-for-linux'
+    'outlook-for-linux'
 )
 
 echo -e "${BLUE}Installing ${#pacman_packages[@]} selected packages...${NC}"

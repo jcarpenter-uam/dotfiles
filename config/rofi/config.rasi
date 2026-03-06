@@ -1,0 +1,107 @@
+* {
+    background:     #3C0E67;
+    background-alt: #4B127A;
+    foreground:     #FFFFFF;
+    subtle:         #8D6CAB;
+
+    highlight-bg:   #A167D6;
+    highlight-fg:   #FFFFFF;
+
+    font: "Hack Nerd Font Mono 20";
+
+    spacing: 15px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+configuration {
+    modi: "drun";
+    show-icons: true;
+    display-drun: "";
+    icon-theme: "breeze-dark";
+}
+
+window {
+    width: 650px;
+    background-color: @background;
+    border: 1px;
+    border-color: @subtle;
+    border-radius: @border-radius;
+    padding: @padding;
+}
+
+mainbox {
+    children: [ "inputbar", "listview" ];
+    spacing: @spacing;
+    padding: @padding;
+}
+
+inputbar {
+    children: [ "prompt", "entry" ];
+    spacing: @spacing;
+    padding: 10px;
+    border-radius: @border-radius;
+    background-color: @highlight-bg;
+}
+
+prompt {
+    text-color: @highlight-fg;
+}
+
+entry {
+    placeholder: "Search...";
+    placeholder-color: @foreground;
+    text-color: @foreground;
+}
+
+listview {
+    columns: 1;
+    lines: 8;
+    fixed-height: false;
+    cycle: true;
+    scrollbar: false;
+    spacing: 5px;
+    border: 0px;
+}
+
+element {
+    padding: 8px 12px;
+    border-radius: @border-radius;
+    background-color: transparent;
+    text-color: @foreground;
+}
+
+element-text {
+    background-color: inherit;
+    text-color: inherit;
+}
+
+element-icon {
+    size: 30px;
+    padding: 0 10px 0 10px;
+    background-color: inherit;
+}
+
+element.normal.normal {
+    background-color: @background-alt;
+    text-color: @foreground;
+}
+
+element.alternate.normal {
+    background-color: @background-alt;
+    text-color: @foreground;
+}
+
+element.selected.normal {
+    background-color: @highlight-bg;
+    text-color: @highlight-fg;
+}
+
+message {
+    padding: @padding;
+    border: 1px;
+    border-color: @subtle;
+    border-radius: @border-radius;
+    background-color: @background;
+    text-color: @foreground;
+}

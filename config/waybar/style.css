@@ -1,0 +1,94 @@
+* {
+  font-family: Hack Nerd Font Mono;
+  font-size: 20px;
+  min-height: 0;
+  padding-right: 2px;
+  padding-left: 2px;
+  padding-bottom: 0px;
+}
+
+#waybar {
+  background: transparent;
+  color: #e5e5e5;
+  margin: 2px 2px;
+}
+
+#workspaces {
+  border-radius: 5px;
+  margin: 5px;
+  background: #101010;
+  margin-left: 1rem;
+}
+
+#workspaces button {
+  border-radius: 5px;
+  padding: 0.4rem;
+}
+
+#workspaces button:hover {
+  color: #9e55e6;
+  border-radius: 5px;
+}
+
+#workspaces button.active {
+  color: #9e55e6;
+  border-radius: 5px;
+}
+
+#tray,
+#clock,
+#battery,
+#pulseaudio,
+#network,
+#cpu,
+#memory,
+#custom-gpu,
+#custom-power {
+  background-color: #101010;
+  padding: 0.5rem 1rem;
+  margin: 5px 0;
+}
+
+#clock {
+  border-radius: 5px;
+  margin-right: 0;
+}
+
+#pulseaudio {
+  color: #ea999c;
+  margin-left: 1rem;
+  border-radius: 5px 0px 0px 5px;
+}
+
+#battery {
+  color: #a6d189;
+}
+
+#battery.charging,
+#battery.plugged {
+  color: #a6d189;
+}
+
+#battery.warning:not(.charging) {
+  color: #e5c890;
+}
+
+#battery.critical:not(.charging) {
+  color: #e78284;
+}
+
+#custom-gpu {
+  border-radius: 0px 5px 5px 0px;
+}
+
+#tray {
+  margin-right: 1rem;
+  margin-left: 1rem;
+  border-radius: 5px;
+}
+
+#custom-power {
+  margin-right: 1rem;
+  border-radius: 5px;
+  color: #ea999c;
+}
