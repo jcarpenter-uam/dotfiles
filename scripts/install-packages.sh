@@ -39,11 +39,17 @@ pacman_packages=(
     'ripgrep'
     'pacman-contrib'
     'websocat'
+<<<<<<< HEAD
     'wayvnc'
     'virtualbox'
     'tlp'
     'brightnessctl'
     'nvidia-container-toolkit'
+=======
+    'opencode'
+    'tree-sitter-cli'
+    'ethtool'
+>>>>>>> upstream/master
 )
 
 aur_packages=(
